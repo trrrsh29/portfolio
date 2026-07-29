@@ -31,8 +31,7 @@ html{scroll-behavior:smooth}
 body{font-family:'Inconsolata',monospace;background:var(--bg);color:var(--fg);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;cursor:none}
 
 /* ——— CURSOR ——— */
-.cur{width:16px;height:26px;background:var(--pop);position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .15s,height .15s,opacity .2s;clip-path:polygon(50% 0%,60% 38%,100% 50%,60% 62%,50% 100%,40% 62%,0% 50%,40% 38%)}
-
+.cur{width:16px;height:26px;background:var(--pop);position:fixed;top:0;left:0;pointer-events:none;z-index:9999;clip-path:polygon(50% 0%,60% 38%,100% 50%,60% 62%,50% 100%,40% 62%,0% 50%,40% 38%);will-change:transform}
 /* ——— NAV ——— */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;justify-content:space-between;align-items:center;padding:1.4rem 4vw;transition:border-color .3s,background .3s;border-bottom:1px solid transparent}
 nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-filter:blur(8px)}
@@ -1530,17 +1529,18 @@ function openProjectById(id) {
    CURSOR
    ================================================================ */
 const c1 = document.getElementById('c1');
+let mx=0,my=0,cScale=1;
 document.addEventListener('mousemove', e => {
-  c1.style.left=e.clientX+'px'; c1.style.top=e.clientY+'px';
+  mx=e.clientX; my=e.clientY;
+  c1.style.transform = `translate(${mx-8}px,${my-13}px) scale(${cScale})`;
 });
 function bindCursorLinks(){
   document.querySelectorAll('a,button').forEach(el=>{
-    el.addEventListener('mouseenter',()=>{c1.style.width='34px';c1.style.height='54px'});
-    el.addEventListener('mouseleave',()=>{c1.style.width='16px';c1.style.height='26px'});
+    el.addEventListener('mouseenter',()=>{cScale=1.15});
+    el.addEventListener('mouseleave',()=>{cScale=1});
   });
 }
 bindCursorLinks();
-
 /* ================================================================
    NAV SCROLL
    ================================================================ */
