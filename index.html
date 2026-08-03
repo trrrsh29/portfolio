@@ -318,7 +318,7 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
 /* Image gallery on detail page */
 .detail-body{padding:5rem 4vw}
 .detail-section-label{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pop);margin-bottom:1rem}
-.detail-body-text{display:grid;grid-template-columns:1fr 1fr;gap:0 4rem;font-size:.95rem;color:var(--mid);line-height:1.9;margin-bottom:4rem}
+.detail-body-text{display:grid;grid-template-columns:1fr 1fr;gap:0 10rem;font-size:.95rem;color:var(--mid);line-height:1.9;margin-bottom:4rem}
 .detail-body-text p{margin:0 0 1.25rem}
 .detail-gallery{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:5rem}
 .detail-gallery-item{aspect-ratio:4/3;background:var(--fg);border-radius:2px;overflow:hidden;position:relative}
@@ -517,6 +517,7 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
 
 /* ——— RESPONSIVE ——— */
 @media(max-width:900px){
+   .detail-body-text{grid-template-columns:1fr}
   .project-card{grid-template-columns:1fr;gap:1.25rem;padding:2rem 0}
   .project-num{padding-top:0}
  .project-thumb{aspect-ratio:5/2.7;order:2}
