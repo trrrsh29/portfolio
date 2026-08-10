@@ -103,7 +103,7 @@ const SMALL_PROJECTS = {
     brief: 'Studio project',
     role: 'Solo',
     shortDesc: 'Rebranding The Conversation in an Age of Misinformation.',
-    longDesc: `A self-initiated publication that began as a research document and became something more considered. The Conversation uses a strict two-column grid and a restrained palette to let the writing breathe.\n\nAdd your own description here — what was the brief, what decisions did you make, and what did you learn?`,
+    longDesc: `The Conversation explores how editorial design can build trust in a media landscape shaped by misinformation, algorithmic content and visual noise. I reimagined the platform for a younger audience, focusing on how credibility could be communicated through structure rather than visual tropes of “authenticity.” \n\n  `,
     coverImg: 'website/conversation-4_compressed.png',   // EDIT: 'filename.jpg'
     gallery: ['website/conversation-3.png', 'website/conversation-2.png', 'website/conversation-1.png'],    // EDIT: ['img1.jpg', 'img2.jpg']
     prevProject: null,
