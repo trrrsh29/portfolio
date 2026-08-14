@@ -104,7 +104,7 @@ const SMALL_PROJECTS = {
     role: 'Solo',
     shortDesc: 'Rebranding The Conversation in an Age of Misinformation.',
     longDesc: `The Conversation explores how editorial design can build trust in a media landscape shaped by misinformation, algorithmic content and visual noise. I reimagined the platform for a younger audience, focusing on how credibility could be communicated through structure rather than visual tropes of “authenticity.” \n\n  `,
-    coverImg: 'website/conversation-4_compressed.png',   // EDIT: 'filename.jpg'
+    coverImg: 'website/conversation-4.jpg',   // EDIT: 'filename.jpg'
     gallery: ['website/conversation-3.png', 'website/conversation-2.png', 'website/conversation-1.png'],    // EDIT: ['img1.jpg', 'img2.jpg']
     prevProject: null,
     nextProject: 'sp2',
