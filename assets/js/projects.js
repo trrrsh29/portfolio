@@ -79,7 +79,7 @@ const PROJECTS = {
     role: 'Solo',
     shortDesc: 'A branding project creating a cohesive visual identity through logo design, typography, colour, and packaging.',
     longDesc: `The brand aims to captivate its audience through engaging and thoughtfully designed packaging, ensuring the product stands out on shelves and leaves a lasting impression. The packaging is not just visually appealing but also serves as an extension of the brand’s personality. Every design element, from color choices to typography and illustrations, is carefully selected to create a sense of excitement and desirability.`,
-    coverImg: 'website/Pearline-8.png',
+    coverImg: 'website/Pearline-8.jpg',
     gallery: ['website/socials-01.png', 'website/Pearline-5.png', 'website/Pearline-10.png'],
     prevProject: 'p4',
     nextProject: null,
