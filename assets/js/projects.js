@@ -165,7 +165,7 @@ const SMALL_PROJECTS = {
     shortDesc: 'Reimagining the wayfinding experience at the NGV — a signage system designed to integrate into the gallery architecture rather than sit on top of it.',  // EDIT
     longDesc: `This project reimagines the wayfinding system for the National Gallery of Victoria, creating a clearer and more engaging navigation experience for visitors. The proposal combines minimalist typography, intuitive information hierarchy, and sculptural signage that integrates seamlessly with the gallery's architecture. Designed to enhance accessibility and user experience, the system guides movement naturally while preserving the visual identity of the NGV, demonstrating how thoughtful environmental graphic design can improve both functionality and visitor engagement.`,
     coverImg: 'website/ngv-1.png',   // EDIT
-    gallery: ['website/ngv-3.png', 'website/ngv-5.png', 'website/ngv-4.png'],   // EDIT
+    gallery: ['website/ngv-3.jpg', 'website/ngv-5.png', 'website/ngv-4.png'],   // EDIT
     prevProject: 'sp3',
     nextProject: null ,
  
