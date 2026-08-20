@@ -122,7 +122,7 @@ const SMALL_PROJECTS = {
     coverImg: 'website/vision-4.png',
     gallery: ['website/vision-1.png', 'website/vision-3.png', 'website/vision-2.png'],
     prevProject: 'sp1',
-    nextProject: 'sp4',
+    nextProject: 'sp3',
   },
   //sp3: {
     // num: 'S3',
