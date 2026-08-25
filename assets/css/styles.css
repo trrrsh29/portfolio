@@ -512,6 +512,15 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
   html{scroll-behavior:auto}
 }
 
+/* ——— REVEAL ——— */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ——— HERO ——— */
+.hero-lily{position:absolute;right:-2%;top:-5%;width:52%;max-width:480px;opacity:.12;pointer-events:none;z-index:0;mix-blend-mode:multiply;transform:rotate(6deg);object-fit:contain}
+.hero-fade{opacity:0;transition:opacity 1s ease}
+.hero-fade.in{opacity:1}
+
 /* ——— TRANSITIONS ——— */
 .page{transition:opacity .3s ease}
 .page.fade-out{opacity:0;pointer-events:none}
