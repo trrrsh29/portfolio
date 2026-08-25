@@ -52,6 +52,11 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 .hero-scroll{display:flex;align-items:center;gap:.6rem;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);animation:drift 2.2s ease-in-out infinite}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 
+/* ——— HERO - LILY ——— */
+.hero-lily{position:absolute;right:-2%;top:-5%;width:52%;max-width:480px;opacity:.12;pointer-events:none;z-index:0;mix-blend-mode:multiply;transform:rotate(6deg);object-fit:contain}
+.hero-fade{opacity:0;transition:opacity 1s ease}
+.hero-fade.in{opacity:1}
+
 /* MARQUEE */
 .marquee-strip{
   background:var(--fg);
