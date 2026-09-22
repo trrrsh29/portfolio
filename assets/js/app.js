@@ -220,25 +220,21 @@ function showPage(name) {
   clearTimeout(pageTransitionTimer);
 
   return new Promise(resolve => {
-    if (!current) {
-      target.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'instant' });
-      resolve(true);
-      return;
+    // Immediately show the target page
+    if (current) {
+      current.classList.remove('active', 'fade-out');
     }
 
-    // Keep the current page active while it fades. Removing .active here was
-    // the original bug: .page immediately becomes display:none.
-    current.classList.add('fade-out');
-    pageTransitionTimer = window.setTimeout(() => {
-      current.classList.remove('active', 'fade-out');
-      target.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'instant' });
-      resolve(true);
-    }, 300);
+    target.classList.add('active');
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
+
+    resolve(true);
   });
 }
-
 function openProject(e, id) {
   e.preventDefault();
   renderProject(id);
