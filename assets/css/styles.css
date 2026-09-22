@@ -161,7 +161,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 .about .section-heading em{color:var(--pop)}
 .about .section-header{border-color:#2c2a26}
 .about .section-count{color:#555}
-.about-photo{aspect-ratio:3/2;background:#252320;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.6rem;color:#444;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;position:relative;overflow:hidden}
+.about-photo{aspect-ratio:3/2;background:#f0ebe4;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.6rem;color:#444;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;position:relative;overflow:hidden}
 .about-photo img{width:90%;height:90%;object-fit:cover}
 .about-photo-label{position:absolute;bottom:1.25rem;left:1.25rem;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#555}
 .about-right{display:flex;flex-direction:column;gap:1.5rem}
