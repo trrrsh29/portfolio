@@ -166,10 +166,28 @@ const SMALL_PROJECTS = {
     longDesc: `This project reimagines the wayfinding system for the National Gallery of Victoria, creating a clearer and more engaging navigation experience for visitors. The proposal combines minimalist typography, intuitive information hierarchy, and sculptural signage that integrates seamlessly with the gallery's architecture. Designed to enhance accessibility and user experience, the system guides movement naturally while preserving the visual identity of the NGV, demonstrating how thoughtful environmental graphic design can improve both functionality and visitor engagement.`,
     coverImg: 'website/ngv-1.png',   // EDIT
     gallery: ['website/ngv-3.jpg', 'website/ngv-5.png', 'website/ngv.-4.png'],   // EDIT
-    prevProject: 'sp3',
-    nextProject: null ,
- 
+   prevProject: 'sp3',
+    nextProject: 'sp5',
   },
+
+  sp5: {
+    num: 'S5',
+    title: 'Codewords - Silence',
+    titleItalic: '',
+    tags: ['Interactive', 'Web', 'Experience'],
+    year: '2026',
+    brief: 'Major project',
+    role: 'Solo',
+    shortDesc: 'An interactive web experience exploring language, play and digital interaction.',
+    longDesc: `Codewords is an interactive web project that explores how language can become a visual and playful experience. Designed as an immersive digital experience, the project combines interaction, typography and web design to encourage users to explore and engage with the content. The title of my work, “Silence,”
+\n\n draws from minimalist design, offering users a calm space to explore the concept of silence through interaction without visual overstimulation.`,
+    coverImg: 'website/codewords.jpg',
+    gallery: [],
+    prevProject: 'sp4',
+    nextProject: null,
+    externalUrl: 'https://trsh2905.github.io/Major-Project/',
+  },
+   
   // ↓ COPY THIS BLOCK TO ADD MORE SMALL PROJECTS ↓
   // sp6: {
   //   num: 'S6',
