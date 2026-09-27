@@ -129,7 +129,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 
   cursor:grab;
   touch-action:none;
-  will-change:transform;
+  will-change:left, top;
 }
 
 .hero-doodle:active{
