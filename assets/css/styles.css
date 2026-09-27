@@ -132,7 +132,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:16%;
   right:auto;
   bottom:auto;
-  width:105px;
+  width:125px;
 }
 
 .doodle-flower{
@@ -140,7 +140,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:auto;
   right:25%;
   bottom:auto;
-  width:95px;
+  width:115px;
 }
 
 .doodle-coffee{
@@ -148,7 +148,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:25%;
   right:auto;
   bottom:auto;
-  width:90px;
+  width:105px;
 }
 
 .doodle-cat{
@@ -156,7 +156,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:auto;
   right:25%;
   bottom:auto;
-  width:95px;
+  width:115px;
 }
 
 .doodle-heart{
@@ -164,7 +164,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:16%;
   right:auto;
   bottom:11%;
-  width:60px;
+  width:70px;
 }
 
 .doodle-camera{
@@ -172,7 +172,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:auto;
   right:12%;
   bottom:10%;
-  width:105px;
+  width:125px;
 }
 /* ================================
    SUBTLE MOVEMENT
