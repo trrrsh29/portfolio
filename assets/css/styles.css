@@ -136,9 +136,9 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 }
 
 .doodle-flower{
-  top:25%;
+  top:18%;
   left:auto;
-  right:25%;
+  right:30%;
   bottom:auto;
   width:115px;
 }
@@ -152,7 +152,7 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 }
 
 .doodle-cat{
-  top:57%;
+  top:50%;
   left:auto;
   right:25%;
   bottom:auto;
