@@ -100,89 +100,57 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
    HERO DOODLES
 ================================ */
 
-.hero-doodles {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.hero-doodle {
-  position: absolute;
-  width: 75px;
-  height: auto;
-  opacity: 0.75;
-  mix-blend-mode: multiply;
-  animation-duration: 6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-
-/* TOP LEFT — playing card */
-
+/* CARD — upper middle-left */
 .doodle-card {
-  top: 18%;
-  left: 16%;
-  width: 90px;
+  top: 20%;
+  left: 33%;
+  width: clamp(60px, 6vw, 90px);
   transform: rotate(-15deg);
   animation-name: float-card;
 }
 
-
-/* TOP RIGHT — flower */
-
-.doodle-flower {
-  top: 20%;
-  right: 28%;
-  width: 85px;
-  transform: rotate(8deg);
-  animation-name: float-flower;
-}
-
-
-/* BESIDE NAME — coffee */
-
-.doodle-coffee {
-  top: 58%;
-  left: 27%;
-  width: 85px;
-  transform: rotate(-5deg);
-  animation-name: float-coffee;
-}
-
-
-/* BESIDE NAME — cat */
-
-.doodle-cat {
-  top: 58%;
-  right: 27%;
-  width: 80px;
-  animation-name: float-cat;
-}
-
-
-/* BOTTOM LEFT — heart */
-
-.doodle-heart {
-  bottom: 14%;
-  left: 15%;
-  width: 65px;
-  animation-name: float-heart;
-}
-
-
-/* BOTTOM RIGHT — camera */
-
+/* CAMERA — upper middle-right */
 .doodle-camera {
-  bottom: 14%;
-  right: 16%;
-  width: 85px;
+  top: 29%;
+  right: 33%;
+  width: clamp(55px, 6vw, 85px);
   transform: rotate(8deg);
   animation-name: float-camera;
 }
 
+/* FLOWER — centre */
+.doodle-flower {
+  top: 44%;
+  left: 42%;
+  width: clamp(65px, 7vw, 100px);
+  transform: rotate(8deg);
+  animation-name: float-flower;
+}
+
+/* CAT — beside Bedi */
+.doodle-cat {
+  top: 59%;
+  left: 27%;
+  width: clamp(60px, 6vw, 85px);
+  animation-name: float-cat;
+}
+
+/* COFFEE — lower middle-right */
+.doodle-coffee {
+  top: 64%;
+  left: 56%;
+  width: clamp(65px, 6vw, 90px);
+  transform: rotate(-5deg);
+  animation-name: float-coffee;
+}
+
+/* HEART — underneath the bio area */
+.doodle-heart {
+  bottom: 18%;
+  left: 33%;
+  width: clamp(40px, 4vw, 60px);
+  animation-name: float-heart;
+}
 
 /* ================================
    SUBTLE MOVEMENT
