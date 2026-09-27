@@ -105,64 +105,56 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
    HERO DOODLES
 ================================ */
 
-/* CARD — upper middle-left */
-/* CARD — highest / far left */
-/* CARD — upper left */
-/* CARD — upper left */
+/* ================================================================
+   HERO DOODLE POSITIONS
+   ================================================================ */
+
 .doodle-card{
-  top:18%;
+  top:19%;
   left:16%;
+  right:auto;
+  bottom:auto;
   width:105px;
-  transform:rotate(-15deg);
-  animation-name:float-card;
 }
 
-/* FLOWER — upper right */
 .doodle-flower{
-  top:22%;
-  right:27%;
+  top:25%;
   left:auto;
+  right:25%;
+  bottom:auto;
   width:95px;
-  transform:rotate(8deg);
-  animation-name:float-flower;
 }
 
-/* COFFEE — middle left */
 .doodle-coffee{
-  top:58%;
-  left:26%;
+  top:55%;
+  left:25%;
+  right:auto;
+  bottom:auto;
   width:90px;
-  transform:rotate(-5deg);
-  animation-name:float-coffee;
 }
 
-/* CAT — middle right */
 .doodle-cat{
-  top:59%;
-  right:26%;
+  top:57%;
   left:auto;
-  width:90px;
-  animation-name:float-cat;
+  right:25%;
+  bottom:auto;
+  width:95px;
 }
 
-/* HEART — bottom left */
 .doodle-heart{
   top:auto;
-  bottom:11%;
   left:16%;
+  right:auto;
+  bottom:11%;
   width:60px;
-  animation-name:float-heart;
 }
 
-/* CAMERA — bottom right */
 .doodle-camera{
   top:auto;
-  bottom:10%;
-  right:12%;
   left:auto;
-  width:100px;
-  transform:rotate(8deg);
-  animation-name:float-camera;
+  right:12%;
+  bottom:10%;
+  width:105px;
 }
 /* ================================
    SUBTLE MOVEMENT
