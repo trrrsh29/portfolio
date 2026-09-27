@@ -7,6 +7,21 @@
 const PROJECTS = {
   p1: {
     num: '01',
+    title: 'Magazine',
+    titleItalic: '',
+    tags: ['Publication', 'Editorial'],
+    year: '2023',
+    brief: 'Personal project',
+    role: 'Solo',
+    shortDesc: 'A magazine layout exploring grids, type hierarchy, and how image and text share a page.',
+    longDesc: `Designed and developed a magazine that allowed me to explore the fundamentals of editorial design. Throughout the process, learning how to apply alignment, grids, and hierarchy to create a clear structure that guides the reader’s eye and enhances readability. Experimenting with typographic choices, layout systems, and visual balance to establish consistency while maintaining a dynamic flow across pages. `,
+    coverImg: 'website/page 5.png',
+    gallery: ['website/page 2.png', 'website/page 3.png', 'website/page 4.png'],
+    prevProject: null,
+    nextProject: 'p2',
+  },
+     p2: {
+    num: '02',
     title: 'Memo',       // EDIT
     titleItalic: '',                   // EDIT: optional italic word e.g. 'One'
     tags: ['Branding', 'Illustration'],    // EDIT
@@ -21,11 +36,11 @@ const PROJECTS = {
     // EDIT: add gallery images e.g. ['project1-a.jpg','project1-b.jpg','project1-c.jpg']
     // Leave as [] if you don't have images yet
     gallery: ['website/memo-2.png', 'website/memo_4.jpg', 'website/memo-3.png'],
-    prevProject: null,  // set to 'p3' if you want to link to previous
-    nextProject: 'p2',
+    prevProject: 'p1',  // set to 'p3' if you want to link to previous
+    nextProject: 'p3',
   },
-  p2: {
-    num: '02',
+  p3: {
+    num: '03',
     title: 'Typography Book',
     titleItalic: '',
     tags: ['Publication', 'Typography'],
@@ -36,11 +51,11 @@ const PROJECTS = {
     longDesc: `The project involved creating a specimen book to showcase the unique qualities of the typeface Parry Grotesque. It challenged us to explore the full expressive potential of the font while adhering to strict constraints, such as using only elements already within the typeface. No additional shapes, images, or external graphics`,
     coverImg: 'website/book-1.png',
     gallery: ['website/book-6.png', 'website/book-3.png', 'website/book-4.png'],
-    prevProject: 'p1',
-    nextProject: 'p3',
+    prevProject: 'p2',
+    nextProject: 'p4',
   },
-  p3: {
-    num: '03',
+  p4: {
+    num: '04',
    title: 'Light Between Us',
     titleItalic: '',
     tags: ['Branding', 'Experience'],
@@ -54,21 +69,7 @@ const PROJECTS = {
     prevProject: 'p2',
     nextProject: 'p4',
   },
-  p4: {
-    num: '04',
-    title: 'Magazine',
-    titleItalic: '',
-    tags: ['Publication', 'Editorial'],
-    year: '2023',
-    brief: 'Personal project',
-    role: 'Solo',
-    shortDesc: 'A magazine layout exploring grids, type hierarchy, and how image and text share a page.',
-    longDesc: `Designed and developed a magazine that allowed me to explore the fundamentals of editorial design. Throughout the process, learning how to apply alignment, grids, and hierarchy to create a clear structure that guides the reader’s eye and enhances readability. Experimenting with typographic choices, layout systems, and visual balance to establish consistency while maintaining a dynamic flow across pages. `,
-    coverImg: 'website/page 5.png',
-    gallery: ['website/page 2.png', 'website/page 3.png', 'website/page 4.png'],
-    prevProject: 'p3',
-    nextProject: 'p5',
-  },
+   
   p5: {
     num: '05',
        title: 'Pearline',
