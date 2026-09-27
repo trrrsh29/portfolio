@@ -126,7 +126,16 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   z-index:3;
   pointer-events:auto;
   user-select:none;
+
+  cursor:grab;
+  touch-action:none;
+  will-change:transform;
 }
+
+.hero-doodle:active{
+  cursor:grabbing;
+}
+
 .doodle-card{
   top:19%;
   left:16%;
