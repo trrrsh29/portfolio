@@ -109,6 +109,24 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
    HERO DOODLE POSITIONS
    ================================================================ */
 
+.hero-doodles{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index:3;
+  pointer-events:none;
+}
+
+.hero-doodle{
+  position:absolute;
+  height:auto;
+  opacity:.85;
+  z-index:3;
+  pointer-events:auto;
+  user-select:none;
+}
 .doodle-card{
   top:19%;
   left:16%;
