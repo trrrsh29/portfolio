@@ -438,38 +438,69 @@ function handleSubmit(e){
    DRAGGABLE HERO DOODLES
    ================================================================ */
 
+/* ================================================================
+   DRAGGABLE HERO DOODLES
+   ================================================================ */
+
 document.querySelectorAll('.hero-doodle').forEach((doodle) => {
 
   let dragging = false;
-  let startX = 0;
-  let startY = 0;
-  let moveX = 0;
-  let moveY = 0;
+  let offsetX = 0;
+  let offsetY = 0;
 
   doodle.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+
+    const doodleRect = doodle.getBoundingClientRect();
+    const parentRect = doodle.parentElement.getBoundingClientRect();
+
+    // Convert current position into exact pixel coordinates
+    doodle.style.left = `${doodleRect.left - parentRect.left}px`;
+    doodle.style.top = `${doodleRect.top - parentRect.top}px`;
+
+    // Remove right/bottom positioning once dragging starts
+    doodle.style.right = 'auto';
+    doodle.style.bottom = 'auto';
+
+    offsetX = e.clientX - doodleRect.left;
+    offsetY = e.clientY - doodleRect.top;
+
     dragging = true;
 
-    startX = e.clientX - moveX;
-    startY = e.clientY - moveY;
-
     doodle.setPointerCapture(e.pointerId);
-    doodle.style.zIndex = '10';
+    doodle.style.zIndex = '20';
   });
 
   doodle.addEventListener('pointermove', (e) => {
     if (!dragging) return;
 
-    moveX = e.clientX - startX;
-    moveY = e.clientY - startY;
+    const parentRect = doodle.parentElement.getBoundingClientRect();
 
-    doodle.style.transform =
-      `translate(${moveX}px, ${moveY}px)`;
+    let x = e.clientX - parentRect.left - offsetX;
+    let y = e.clientY - parentRect.top - offsetY;
+
+    // Keep the doodle inside the hero
+    x = Math.max(
+      0,
+      Math.min(x, parentRect.width - doodle.offsetWidth)
+    );
+
+    y = Math.max(
+      0,
+      Math.min(y, parentRect.height - doodle.offsetHeight)
+    );
+
+    doodle.style.left = `${x}px`;
+    doodle.style.top = `${y}px`;
   });
 
   doodle.addEventListener('pointerup', (e) => {
     dragging = false;
 
-    doodle.releasePointerCapture(e.pointerId);
+    if (doodle.hasPointerCapture(e.pointerId)) {
+      doodle.releasePointerCapture(e.pointerId);
+    }
+
     doodle.style.zIndex = '3';
   });
 
