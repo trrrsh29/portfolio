@@ -59,7 +59,40 @@
     </div>
 
     <!-- added blob -->
+<!-- LEFT BLOB -->
+<div class="hero-blob hero-blob-left" aria-hidden="true">
+  <svg viewBox="0 0 500 900"
+       xmlns="http://www.w3.org/2000/svg"
+       preserveAspectRatio="xMaxYMax meet">
 
+    <defs>
+      <radialGradient id="blobGradLeft" cx="70%" cy="55%" r="55%">
+        <stop offset="0%"   stop-color="#7A2020" stop-opacity="0.90"/>
+        <stop offset="30%"  stop-color="#9A3A2A" stop-opacity="0.75"/>
+        <stop offset="65%"  stop-color="#B86848" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#D4A080" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <path fill="url(#blobGradLeft)"
+      d="M 700 900 L 700 0 C 600 20,420 80,350 200 C 270 340,420 400,380 460 C 340 520,160 560,120 680 C 90 760,200 860,380 900 Z">
+
+      <animate
+        attributeName="d"
+        dur="10s"
+        repeatCount="indefinite"
+        values="
+          M 700 900 L 700 0 C 600 20,420 80,350 200 C 270 340,420 400,380 460 C 340 520,160 560,120 680 C 90 760,200 860,380 900 Z;
+          M 700 900 L 700 0 C 610 30,430 90,355 210 C 272 352,428 408,384 468 C 342 528,155 568,112 688 C 82 770,205 868,388 900 Z;
+          M 700 900 L 700 0 C 590 15,415 74,344 194 C 265 332,415 394,374 454 C 336 514,162 552,125 672 C 96 752,196 852,372 900 Z;
+          M 700 900 L 700 0 C 600 20,420 80,350 200 C 270 340,420 400,380 460 C 340 520,160 560,120 680 C 90 760,200 860,380 900 Z"
+        calcMode="spline"
+        keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </path>
+
+  </svg>
+</div>
+    
     <!-- illustration -->
     <!--  -->
 
