@@ -101,55 +101,58 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 ================================ */
 
 /* CARD — upper middle-left */
+/* CARD — highest / far left */
 .doodle-card {
-  top: 20%;
-  left: 33%;
-  width: clamp(60px, 6vw, 90px);
+  top: 19%;
+  left: 7%;
+  width: 78px;
   transform: rotate(-15deg);
   animation-name: float-card;
 }
 
-/* CAMERA — upper middle-right */
-.doodle-camera {
-  top: 29%;
-  right: 33%;
-  width: clamp(55px, 6vw, 85px);
-  transform: rotate(8deg);
-  animation-name: float-camera;
-}
-
-/* FLOWER — centre */
+/* FLOWER — slightly lower */
 .doodle-flower {
-  top: 44%;
-  left: 42%;
-  width: clamp(65px, 7vw, 100px);
+  top: 22%;
+  left: 16%;
+  width: 72px;
   transform: rotate(8deg);
   animation-name: float-flower;
 }
 
-/* CAT — beside Bedi */
-.doodle-cat {
-  top: 59%;
-  left: 27%;
-  width: clamp(60px, 6vw, 85px);
-  animation-name: float-cat;
-}
-
-/* COFFEE — lower middle-right */
+/* COFFEE — slightly higher again */
 .doodle-coffee {
-  top: 64%;
-  left: 56%;
-  width: clamp(65px, 6vw, 90px);
+  top: 20%;
+  left: 23%;
+  width: 70px;
   transform: rotate(-5deg);
   animation-name: float-coffee;
 }
 
-/* HEART — underneath the bio area */
+/* CAT — lower */
+.doodle-cat {
+  top: 23%;
+  left: 29%;
+  width: 72px;
+  animation-name: float-cat;
+}
+
+/* HEART — small + higher */
 .doodle-heart {
-  bottom: 18%;
-  left: 33%;
-  width: clamp(40px, 4vw, 60px);
+  top: 21%;
+  left: 36%;
+  width: 45px;
   animation-name: float-heart;
+}
+
+/* CAMERA — furthest right + slightly lower */
+.doodle-camera {
+  top: 24%;
+  left: 41%;
+  right: auto;
+  bottom: auto;
+  width: 75px;
+  transform: rotate(8deg);
+  animation-name: float-camera;
 }
 
 /* ================================
