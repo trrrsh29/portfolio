@@ -138,9 +138,9 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 .doodle-flower{
   top:18%;
   left:auto;
-  right:30%;
+  right:40%;
   bottom:auto;
-  width:115px;
+  width:125px;
 }
 
 .doodle-coffee{
@@ -148,11 +148,11 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
   left:25%;
   right:auto;
   bottom:auto;
-  width:105px;
+  width:115px;
 }
 
 .doodle-cat{
-  top:50%;
+  top:40%;
   left:auto;
   right:25%;
   bottom:auto;
