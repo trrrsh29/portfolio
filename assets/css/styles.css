@@ -718,3 +718,126 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
 @media(max-width:560px){
   .hero-bottom{flex-direction:column;align-items:flex-start}
 }
+
+/* ================================================================
+   MOBILE HERO
+   ================================================================ */
+
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero{
+    min-height:100vh;
+    padding:7rem 1.5rem 3rem;
+    justify-content:center;
+    overflow:hidden;
+  }
+
+  /* BLOBS — much smaller on mobile */
+  .hero-blob{
+    width:55vw;
+    height:100%;
+    opacity:.65;
+  }
+
+  .hero-blob-left{
+    left:0;
+    right:auto;
+    transform:scaleX(-1);
+  }
+
+
+  /* TAG */
+  .hero-tag{
+    font-size:.58rem;
+    letter-spacing:.14em;
+    gap:.5rem;
+    margin-bottom:1.2rem;
+    max-width:80%;
+    line-height:1.6;
+  }
+
+  .hero-tag::before{
+    width:1.5rem;
+  }
+
+
+  /* NAME */
+  .hero-title{
+    font-size:clamp(4rem,19vw,6rem);
+    line-height:.88;
+    margin:0 auto 2rem;
+    max-width:100%;
+  }
+
+
+  /* BIO */
+  .hero-bottom{
+    width:85%;
+    max-width:340px;
+    padding-top:1.2rem;
+    gap:1rem;
+  }
+
+  .hero-bio{
+    font-size:.78rem;
+    line-height:1.7;
+    max-width:30ch;
+  }
+
+  .hero-scroll{
+    font-size:.58rem;
+    margin-top:.5rem;
+  }
+
+
+  /* ================================
+     MOBILE DOODLES
+     ================================ */
+
+  .hero-doodle{
+    opacity:.65;
+  }
+
+  /* card */
+  .doodle-card{
+    top:17%;
+    left:12%;
+    width:65px;
+  }
+
+  /* flower */
+  .doodle-flower{
+    top:19%;
+    right:13%;
+    width:58px;
+  }
+
+  /* coffee */
+  .doodle-coffee{
+    top:66%;
+    left:8%;
+    width:55px;
+  }
+
+  /* cat */
+  .doodle-cat{
+    top:65%;
+    right:9%;
+    width:55px;
+  }
+
+  /* heart */
+  .doodle-heart{
+    bottom:7%;
+    left:15%;
+    width:42px;
+  }
+
+  /* camera */
+  .doodle-camera{
+    bottom:7%;
+    right:12%;
+    width:60px;
+  }
+}
