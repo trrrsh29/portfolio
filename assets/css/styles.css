@@ -45,9 +45,8 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 .hero-blob-left{
   left:0;
   right:auto;
-  width:clamp(300px,55vw,700px);
-  transform:none;
-  opacity:.45;
+  transform:scaleX(-1);
+  transform-origin:center;
 }
 .hero-blob svg{width:100%;height:100%}
 .hero-tag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pop);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:.8rem;position:relative;z-index:1}
