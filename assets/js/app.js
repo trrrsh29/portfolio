@@ -433,3 +433,49 @@ function handleSubmit(e){
   btn.style.background='#2a5c3a';
   btn.disabled=true;
 }
+
+/* ================================================================
+   DRAGGABLE HERO DOODLES
+   ================================================================ */
+
+document.querySelectorAll('.hero-doodle').forEach((doodle) => {
+
+  let dragging = false;
+  let startX = 0;
+  let startY = 0;
+  let moveX = 0;
+  let moveY = 0;
+
+  doodle.addEventListener('pointerdown', (e) => {
+    dragging = true;
+
+    startX = e.clientX - moveX;
+    startY = e.clientY - moveY;
+
+    doodle.setPointerCapture(e.pointerId);
+    doodle.style.zIndex = '10';
+  });
+
+  doodle.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+
+    moveX = e.clientX - startX;
+    moveY = e.clientY - startY;
+
+    doodle.style.transform =
+      `translate(${moveX}px, ${moveY}px)`;
+  });
+
+  doodle.addEventListener('pointerup', (e) => {
+    dragging = false;
+
+    doodle.releasePointerCapture(e.pointerId);
+    doodle.style.zIndex = '3';
+  });
+
+  doodle.addEventListener('pointercancel', () => {
+    dragging = false;
+    doodle.style.zIndex = '3';
+  });
+
+});
