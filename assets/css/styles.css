@@ -52,6 +52,159 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 .hero-scroll{display:flex;align-items:center;gap:.6rem;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);animation:drift 2.2s ease-in-out infinite}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 
+/*Illustration - doodle*/
+
+/* ================================
+   HERO DOODLES
+================================ */
+
+.hero-doodles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-doodle {
+  position: absolute;
+  width: 75px;
+  height: auto;
+  opacity: 0.75;
+  mix-blend-mode: multiply;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+/* TOP LEFT — playing card */
+
+.doodle-card {
+  top: 18%;
+  left: 16%;
+  width: 90px;
+  transform: rotate(-15deg);
+  animation-name: float-card;
+}
+
+
+/* TOP RIGHT — flower */
+
+.doodle-flower {
+  top: 20%;
+  right: 28%;
+  width: 85px;
+  transform: rotate(8deg);
+  animation-name: float-flower;
+}
+
+
+/* BESIDE NAME — coffee */
+
+.doodle-coffee {
+  top: 58%;
+  left: 27%;
+  width: 85px;
+  transform: rotate(-5deg);
+  animation-name: float-coffee;
+}
+
+
+/* BESIDE NAME — cat */
+
+.doodle-cat {
+  top: 58%;
+  right: 27%;
+  width: 80px;
+  animation-name: float-cat;
+}
+
+
+/* BOTTOM LEFT — heart */
+
+.doodle-heart {
+  bottom: 14%;
+  left: 15%;
+  width: 65px;
+  animation-name: float-heart;
+}
+
+
+/* BOTTOM RIGHT — camera */
+
+.doodle-camera {
+  bottom: 14%;
+  right: 16%;
+  width: 85px;
+  transform: rotate(8deg);
+  animation-name: float-camera;
+}
+
+
+/* ================================
+   SUBTLE MOVEMENT
+================================ */
+
+@keyframes float-card {
+  0%, 100% {
+    transform: translateY(0) rotate(-15deg);
+  }
+
+  50% {
+    transform: translateY(-7px) rotate(-12deg);
+  }
+}
+
+@keyframes float-flower {
+  0%, 100% {
+    transform: translateY(0) rotate(8deg);
+  }
+
+  50% {
+    transform: translateY(6px) rotate(11deg);
+  }
+}
+
+@keyframes float-coffee {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+}
+
+@keyframes float-cat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+@keyframes float-heart {
+  0%, 100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+}
+
+@keyframes float-camera {
+  0%, 100% {
+    transform: translateY(0) rotate(8deg);
+  }
+
+  50% {
+    transform: translateY(-6px) rotate(11deg);
+  }
+}
 
 /* MARQUEE */
 .marquee-strip{
