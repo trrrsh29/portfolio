@@ -138,10 +138,10 @@ nav.scrolled{border-color:var(--rule);background:rgba(247,244,239,.93);backdrop-
 
 .doodle-card{
   top:19%;
-  left:16%;
+  left:20%;
   right:auto;
   bottom:auto;
-  width:125px;
+  width:115px;
 }
 
 .doodle-flower{
