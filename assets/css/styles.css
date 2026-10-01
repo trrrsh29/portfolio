@@ -984,80 +984,52 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
      MOBILE DOODLES
      ================================ */
 
-  .hero-doodle{
-    opacity:.65;
-  }
+ /* ================================
+   MOBILE DOODLES — TIGHTER COMPOSITION
+   ================================ */
 
+.hero-doodle{
+  opacity:.68;
+}
 
-  /* CARD — upper left */
-  .doodle-card{
-    top:18%;
-    left:7%;
+/* card — frames top-left of title area */
+.doodle-card{
+  top:23%;
+  left:7%;
+  right:auto;
+  bottom:auto;
+  width:58px;
+}
 
-    right:auto;
-    bottom:auto;
+/* flower — opposite the card */
+.doodle-flower{
+  top:25%;
+  right:8%;
+  left:auto;
+  bottom:auto;
+  width:48px;
+}
 
-    width:62px;
-  }
+/* coffee — anchors bio */
+.doodle-coffee{
+  top:61%;
+  left:6%;
+  right:auto;
+  bottom:auto;
+  width:48px;
+}
 
+/* cat — opposite coffee */
+.doodle-cat{
+  top:62%;
+  right:6%;
+  left:auto;
+  bottom:auto;
+  width:52px;
+}
 
-  /* FLOWER — upper right */
-  .doodle-flower{
-    top:20%;
-    right:8%;
-
-    left:auto;
-    bottom:auto;
-
-    width:55px;
-  }
-
-
-  /* COFFEE — beside bio */
-  .doodle-coffee{
-    top:59%;
-    left:5%;
-
-    right:auto;
-    bottom:auto;
-
-    width:52px;
-  }
-
-
-  /* CAT — opposite bio */
-  .doodle-cat{
-    top:61%;
-    right:5%;
-
-    left:auto;
-    bottom:auto;
-
-    width:55px;
-  }
-
-
-  /* HEART — lower left */
-  .doodle-heart{
-    top:auto;
-    bottom:8%;
-    left:8%;
-
-    right:auto;
-
-    width:38px;
-  }
-
-
-  /* CAMERA — lower right */
-  .doodle-camera{
-    top:auto;
-    bottom:7%;
-    right:7%;
-
-    left:auto;
-
-    width:58px;
-  }
-
+/* hide bottom doodles on mobile */
+.doodle-heart,
+.doodle-camera{
+  display:none;
 }
