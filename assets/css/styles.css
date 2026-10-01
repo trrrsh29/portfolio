@@ -1035,3 +1035,47 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
 .doodle-camera{
   display:none;
 }
+
+
+/* ================================
+   MOBILE FOOTER
+   ================================ */
+
+footer{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:2rem 1.5rem;
+  gap:1rem;
+}
+
+footer span{
+  white-space:nowrap;
+}
+
+/* Left side: 2026 Trisha Bedi */
+footer span:first-child{
+  font-size:0;
+}
+
+footer span:first-child::after{
+  content:"2026 Trisha Bedi";
+  font-size:.72rem;
+}
+
+/* Right side: Graphic Design */
+footer span:nth-child(2){
+  font-size:0;
+}
+
+footer span:nth-child(2)::after{
+  content:"Graphic Design";
+  font-size:.72rem;
+}
+
+/* Hide RMIT University on mobile */
+footer span:last-child{
+  display:none;
+}
