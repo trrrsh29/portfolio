@@ -971,11 +971,11 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
 
   .hero-bio{
     width:100%;
-    max-width:38ch;
+    max-width:42ch;
 
     margin:0 auto;
 
-    font-size:.82rem;
+    font-size:.78rem;
     line-height:1.6;
 
     text-align:center;
@@ -1002,51 +1002,41 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
 
 
   /* upper left */
-  .doodle-card{
-    top:17%;
-    left:7%;
+  /* card — upper left, closer to heading */
+.doodle-card{
+  top:20%;
+  left:11%;
+  right:auto;
+  bottom:auto;
+  width:52px;
+}
 
-    right:auto;
-    bottom:auto;
+/* flower — sits beside name */
+.doodle-flower{
+  top:32%;
+  right:10%;
+  left:auto;
+  bottom:auto;
+  width:46px;
+}
 
-    width:52px;
-  }
+/* coffee — beside lower bio */
+.doodle-coffee{
+  top:61%;
+  left:10%;
+  right:auto;
+  bottom:auto;
+  width:44px;
+}
 
-
-  /* upper right */
-  .doodle-flower{
-    top:18%;
-    right:7%;
-
-    left:auto;
-    bottom:auto;
-
-    width:46px;
-  }
-
-
-  /* lower left */
-  .doodle-coffee{
-    top:auto;
-    bottom:17%;
-    left:6%;
-
-    right:auto;
-
-    width:44px;
-  }
-
-
-  /* lower right */
-  .doodle-cat{
-    top:auto;
-    bottom:17%;
-    right:6%;
-
-    left:auto;
-
-    width:48px;
-  }
+/* cat — lower than coffee, near scroll */
+.doodle-cat{
+  top:68%;
+  right:12%;
+  left:auto;
+  bottom:auto;
+  width:48px;
+}
 
 
   /* too much on mobile — hide */
@@ -1061,31 +1051,36 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
    MOBILE FOOTER
    ================================ */
 
+/* ================================
+   MOBILE FOOTER
+   ================================ */
+
 footer{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
 
-  padding:2rem 1.5rem;
+  padding:1.5rem;
+
+  min-height:0;
+  height:auto;
+
   gap:1rem;
 }
 
 footer span{
+  margin:0;
+  padding:0;
   white-space:nowrap;
 }
 
-/* Left side: 2026 Trisha Bedi */
+/* 2026 Trisha Bedi */
 footer span:first-child{
-  font-size:0;
-}
-
-footer span:first-child::after{
-  content:"2026 Trisha Bedi";
   font-size:.72rem;
 }
 
-/* Right side: Graphic Design */
+/* Graphic Design */
 footer span:nth-child(2){
   font-size:0;
 }
@@ -1095,7 +1090,7 @@ footer span:nth-child(2)::after{
   font-size:.72rem;
 }
 
-/* Hide RMIT University on mobile */
-footer span:last-child{
+/* Remove RMIT completely */
+footer span:nth-child(3){
   display:none;
 }
