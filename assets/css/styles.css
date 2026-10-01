@@ -758,9 +758,126 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
    MOBILE HERO
    ================================================================ */
 
+.menu-toggle,
+.mobile-menu{
+  display:none;
+}
+
 @media (max-width: 768px) {
 
-  /* HERO */
+  /* ================================
+     MOBILE NAV
+     ================================ */
+
+  #nav{
+    padding:24px 22px;
+    align-items:center;
+  }
+
+  .nav-name{
+    font-size:28px;
+    line-height:1;
+    white-space:nowrap;
+    position:relative;
+    z-index:101;
+  }
+
+  /* hide desktop links */
+  .nav-right{
+    display:none;
+  }
+
+  /* hamburger */
+  .menu-toggle{
+    display:flex;
+    width:44px;
+    height:44px;
+    margin-left:auto;
+    padding:0;
+
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+
+    border:0;
+    background:transparent;
+    cursor:pointer;
+
+    position:relative;
+    z-index:101;
+  }
+
+  .menu-toggle span{
+    display:block;
+    width:27px;
+    height:1.5px;
+    background:#171411;
+
+    transition:
+      transform .3s ease,
+      opacity .3s ease;
+  }
+
+  .menu-toggle.active span:first-child{
+    transform:translateY(4.25px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:last-child{
+    transform:translateY(-4.25px) rotate(-45deg);
+  }
+
+
+  /* ================================
+     MOBILE MENU
+     ================================ */
+
+  .mobile-menu{
+    display:flex;
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    padding:100px 24px 38px;
+
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+
+    background:#f4f1eb;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-15px);
+
+    transition:
+      opacity .3s ease,
+      transform .3s ease,
+      visibility .3s;
+
+    z-index:100;
+  }
+
+  .mobile-menu.open{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+
+  .mobile-menu a{
+    font-family:"Inconsolata", monospace;
+    font-size:20px;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+  }
+
+
+  /* ================================
+     HERO
+     ================================ */
+
   .hero{
     min-height:100vh;
     padding:7rem 1.5rem 3rem;
@@ -768,7 +885,18 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
     overflow:hidden;
   }
 
-  /* BLOBS — much smaller on mobile */
+  .hero-inner{
+    text-align:center;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+
+  /* ================================
+     BLOBS
+     ================================ */
+
   .hero-blob{
     width:55vw;
     height:100%;
@@ -782,14 +910,22 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
   }
 
 
-  /* TAG */
+  /* ================================
+     TAG
+     ================================ */
+
   .hero-tag{
     font-size:.58rem;
     letter-spacing:.14em;
     gap:.5rem;
-    margin-bottom:1.2rem;
+
+    margin:0 auto 1.2rem;
+
     max-width:80%;
     line-height:1.6;
+
+    text-align:center;
+    justify-content:center;
   }
 
   .hero-tag::before{
@@ -797,27 +933,49 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
   }
 
 
-  /* NAME */
+  /* ================================
+     BIG NAME
+     ================================ */
+
   .hero-title{
     font-size:clamp(4rem,19vw,6rem);
     line-height:.88;
+
     margin:0 auto 2rem;
     max-width:100%;
+
+    text-align:center;
   }
 
 
-  /* BIO */
+  /* ================================
+     BIO
+     ================================ */
+
   .hero-bottom{
     width:85%;
     max-width:340px;
+
+    margin-left:auto;
+    margin-right:auto;
+
     padding-top:1.2rem;
     gap:1rem;
+
+    text-align:center;
+    align-items:center;
   }
 
   .hero-bio{
     font-size:.78rem;
     line-height:1.7;
+
     max-width:30ch;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    text-align:center;
   }
 
   .hero-scroll{
@@ -834,45 +992,76 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
     opacity:.65;
   }
 
-  /* card */
+
+  /* CARD — upper left */
   .doodle-card{
-    top:17%;
-    left:12%;
-    width:65px;
+    top:18%;
+    left:7%;
+
+    right:auto;
+    bottom:auto;
+
+    width:62px;
   }
 
-  /* flower */
+
+  /* FLOWER — upper right */
   .doodle-flower{
-    top:19%;
-    right:13%;
+    top:20%;
+    right:8%;
+
+    left:auto;
+    bottom:auto;
+
+    width:55px;
+  }
+
+
+  /* COFFEE — beside bio */
+  .doodle-coffee{
+    top:59%;
+    left:5%;
+
+    right:auto;
+    bottom:auto;
+
+    width:52px;
+  }
+
+
+  /* CAT — opposite bio */
+  .doodle-cat{
+    top:61%;
+    right:5%;
+
+    left:auto;
+    bottom:auto;
+
+    width:55px;
+  }
+
+
+  /* HEART — lower left */
+  .doodle-heart{
+    top:auto;
+    bottom:8%;
+    left:8%;
+
+    right:auto;
+
+    width:38px;
+  }
+
+
+  /* CAMERA — lower right */
+  .doodle-camera{
+    top:auto;
+    bottom:7%;
+    right:7%;
+
+    left:auto;
+
     width:58px;
   }
 
-  /* coffee */
-  .doodle-coffee{
-    top:66%;
-    left:8%;
-    width:55px;
-  }
-
-  /* cat */
-  .doodle-cat{
-    top:65%;
-    right:9%;
-    width:55px;
-  }
-
-  /* heart */
-  .doodle-heart{
-    bottom:7%;
-    left:15%;
-    width:42px;
-  }
-
-  /* camera */
-  .doodle-camera{
-    bottom:7%;
-    right:12%;
-    width:60px;
-  }
 }
