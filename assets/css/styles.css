@@ -774,13 +774,9 @@ footer{padding:1.5rem 4vw;border-top:1px solid var(--rule);display:flex;justify-
     align-items:center;
   }
 
-  .nav-name{
-    font-size:28px;
-    line-height:1;
-    white-space:nowrap;
-    position:relative;
-    z-index:101;
-  }
+ .nav-name{
+  display:none;
+}
 
   /* hide desktop links */
   .nav-right{
