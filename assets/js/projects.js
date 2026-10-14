@@ -140,21 +140,23 @@ const SMALL_PROJECTS = {
    // prevProject: 'sp2',
    // nextProject: 'sp4',
  // },
-  sp3: {
+ sp3: {
     num: 'S3',
-    title: 'Details',         // EDIT
+    title: 'Side-B',
     titleItalic: '',
-    tags: ['Photography', 'Editorial'],  // EDIT
-    year: '2025',                  // EDIT
-    brief: 'Personal project',     // EDIT
+    tags: ['Branding', 'Experience'],
+    year: '2026',
+    brief: 'Personal Project',
     role: 'Solo',
-    shortDesc: 'A publication series showing the everyday details of light and movement we miss.',  // EDIT
-    longDesc: `A photography publication exploring the quiet beauty of everyday life through natural light, thoughtful compositions, and subtle details. Designed to encourage slowing down, observing more closely, and appreciating the often-overlooked moments that shape our daily experiences.`,
-    coverImg: 'website/photo_.jpg',   // EDIT
-    gallery: ['website/photo_1.jpg', 'website/photo_2.jpg', 'website/photo_3.jpg'],    // EDIT
+    shortDesc: 'A Vinyl bar celebrating music, culture and social interaction.',
+    longDesc: `Side_B is a conceptual branding project for a vinyl-inspired bar that combines music, cocktails and a laid-back social atmosphere. Drawing inspiration from vintage record culture, the visual identity balances retro influences with a contemporary, minimal approach.`,
+    coverImg: 'website/side_b_3.png',
+    gallery: ['website/side_b_5.png', 'website/side_b_1.png', 'website/side_b_2.png'],
     prevProject: 'sp2',
     nextProject: 'sp4',
+    
   },
+   
   sp4: {
     num: 'S4',
     title: 'NGV Wayfinding',         // EDIT
@@ -173,19 +175,18 @@ const SMALL_PROJECTS = {
 
 sp5: {
     num: 'S5',
-    title: 'Side-B',
+    title: 'Details',         // EDIT
     titleItalic: '',
-    tags: ['Branding', 'Experience'],
-    year: '2026',
-    brief: 'Personal Project',
+    tags: ['Photography', 'Editorial'],  // EDIT
+    year: '2025',                  // EDIT
+    brief: 'Personal project',     // EDIT
     role: 'Solo',
-    shortDesc: 'A Vinyl bar celebrating music, culture and social interaction.',
-    longDesc: `Side_B is a conceptual branding project for a vinyl-inspired bar that combines music, cocktails and a laid-back social atmosphere. Drawing inspiration from vintage record culture, the visual identity balances retro influences with a contemporary, minimal approach.`,
-    coverImg: 'website/side_b_3.png',
-    gallery: ['website/side_b_5.png', 'website/side_b_1.png', 'website/side_b_2.png'],
+    shortDesc: 'A publication series showing the everyday details of light and movement we miss.',  // EDIT
+    longDesc: `A photography publication exploring the quiet beauty of everyday life through natural light, thoughtful compositions, and subtle details. Designed to encourage slowing down, observing more closely, and appreciating the often-overlooked moments that shape our daily experiences.`,
+    coverImg: 'website/photo_.jpg',   // EDIT
+    gallery: ['website/photo_1.jpg', 'website/photo_2.jpg', 'website/photo_3.jpg'],    // EDIT
     prevProject: 'sp4',
-    nextProject: 'sp5',
-    
+    nextProject: 'sp6',
   },
 
   sp6: {
