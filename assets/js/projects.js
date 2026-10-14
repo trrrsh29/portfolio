@@ -181,8 +181,8 @@ sp5: {
     role: 'Solo',
     shortDesc: 'A Vinyl bar celebrating music, culture and social interaction.',
     longDesc: `Side_B is a conceptual branding project for a vinyl-inspired bar that combines music, cocktails and a laid-back social atmosphere. Drawing inspiration from vintage record culture, the visual identity balances retro influences with a contemporary, minimal approach.`,
-    coverImg: 'website/side_b_3.jpg',
-    gallery: ['website/side_b_5.jpg', 'website/side_b_1.jpg', 'website/side_b_2.jpg'],
+    coverImg: 'website/side_b_3.png',
+    gallery: ['website/side_b_5.png', 'website/side_b_1.png', 'website/side_b_2.png'],
     prevProject: 'sp4',
     nextProject: 'sp5',
     
